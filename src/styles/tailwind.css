@@ -1,0 +1,13 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+/* purgecss end ignore */
+@tailwind utilities;
+@tailwind screens;
+
+@layer base {
+  body {
+    @apply m-0 text-gray-900 bg-white text-sm;
+  }
+}

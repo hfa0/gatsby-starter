@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "noEmit": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "$assets/*": ["assets/*"],
+      "$components/*": ["components/*"],
+      "$lib/*": ["components/lib/*"],
+      "$graphqlTypes": ["../graphql-types"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "dashes"
+        }
+      }
+    ]
+  },
+  "include": ["declaration.d.ts", "src/**/*"],
+  "exclude": ["node_modules", "public", ".cache"]
+}
